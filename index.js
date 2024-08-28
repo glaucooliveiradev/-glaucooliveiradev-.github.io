@@ -7,7 +7,7 @@ const app = express();
 // Define a porta do servidor
 const port = 3000;
 
-// Define uma rota '
+// Define uma rota 
 app.get('/calculadora', (req, res) => {
     // Obtém os parâmetros da query string
     const operacao = req.query.operacao;
