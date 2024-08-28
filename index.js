@@ -7,7 +7,7 @@ const app = express();
 // Define a porta do servidor
 const port = 3000;
 
-// Define uma rota
+// Define uma rota '
 app.get('/calculadora', (req, res) => {
     // Obtém os parâmetros da query string
     const operacao = req.query.operacao;
@@ -47,7 +47,7 @@ app.get('/calculadora', (req, res) => {
     res.send(`Resultado: ${resultado}`);
 });
 
-// Inicia o servidor e faz com que ele escute na porta definida
+// Inicia o servidor e faz com que ele execute na porta definida
 app.listen(port, () => {
-    console.log(`Servidor rodando em http://localhost:${port}/calculadora?operacao=soma&n1=2&n2=3`);
+    console.log(`Servidor rodando em http://localhost:${port}`);
 });
